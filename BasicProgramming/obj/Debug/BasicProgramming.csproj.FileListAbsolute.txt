@@ -1,0 +1,7 @@
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.exe.config
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.exe
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.pdb
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csproj.CoreCompileInputs.cache
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.exe
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.pdb
+C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csprojAssemblyReference.cache
