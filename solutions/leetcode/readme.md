@@ -1,1 +1,1 @@
-## All problems solved in [leetcode](https://leetcode.com/)
+## All problems solved in [Leetcode](https://leetcode.com/)
