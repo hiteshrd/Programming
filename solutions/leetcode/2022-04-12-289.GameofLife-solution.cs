@@ -1,3 +1,6 @@
+//Runtime: 214 ms, faster than 29.44% of C# online submissions for Game of Life.
+//Memory Usage: 40.5 MB, less than 91.11% of C# online submissions for Game of Life.
+
 public class Solution {
     public void GameOfLife(int[][] board) {
         int rows = board.Length;
