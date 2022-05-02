@@ -1,19 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using BasicProgramming.TechGig;
 
 namespace BasicProgramming
 {
+    using BasicProgramming.Codility;
+    using BasicProgramming.HackerEarth;
+    using BasicProgramming.HackerRank;
+    using BasicProgramming.Practise;
     /*
- // Sample code to perform I/O:
+// Sample code to perform I/O:
 
- name = Console.ReadLine();                  // Reading input from STDIN
- Console.WriteLine("Hi, {0}.", name);        // Writing output to STDOUT
+name = Console.ReadLine();                  // Reading input from STDIN
+Console.WriteLine("Hi, {0}.", name);        // Writing output to STDOUT
 
- // Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
- */
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
 
     // Write your code here
 
@@ -26,6 +33,15 @@ namespace BasicProgramming
             int retry = 1;
             while (retry == 1)
             {
+                SampleTest _sampleTest = new SampleTest();
+                _sampleTest.MsSampleTest();
+
+                //Sorting _Sorting = new Sorting();
+                //_Sorting.InsertionSort();
+                //NovemberEasy19 _NovemberEasy19 = new NovemberEasy19();
+                //_NovemberEasy19.DeterminingNumbers();
+                //SeptemberCircuits _SeptemberCircuits = new SeptemberCircuits();
+                //_SeptemberCircuits.GoingOffice();
                 //SevenSegmentDisplay sevenSegmentDisplay = new SevenSegmentDisplay();
                 //sevenSegmentDisplay.ProcessSevenSegmentDisplay();
 
@@ -85,7 +101,8 @@ namespace BasicProgramming
                 //_AppleOrange.FindCount();
 
                 //PalindromicString _PalindromicString = new PalindromicString();
-                //_PalindromicString.Check();
+                ////_PalindromicString.Check();
+                //_PalindromicString.DeterminePalindromes();
 
                 //GradingStudents _GradingStudents = new GradingStudents();
                 //_GradingStudents.FindGrades();
@@ -93,15 +110,91 @@ namespace BasicProgramming
                 //CountDivisors _CountDivisors = new CountDivisors();
                 //_CountDivisors.FindDivisors();
 
-                BlockingCollectionTest _BlockingCollectionTest = new BlockingCollectionTest();
-                var task1 = Task.Run(() => { _BlockingCollectionTest.BlockingCollectionAdd(); });
-                var task2 = Task.Run(() => { _BlockingCollectionTest.BlockingCollectionRemove(); });
+                //BlockingCollectionTest _BlockingCollectionTest = new BlockingCollectionTest();
+                //var task1 = Task.Run(() => { _BlockingCollectionTest.BlockingCollectionAdd(); });
+                //var task2 = Task.Run(() => { _BlockingCollectionTest.BlockingCollectionRemove(); });
 
-                task1.Wait();
-                task2.Wait();
+                //task1.Wait();
+                //task2.Wait();
+
+                //TwoStrings _TwoStrings = new TwoStrings();
+                //_TwoStrings.CheckTwoStrings();
+
+                //Kangaroo _Kangaroo = new Kangaroo();
+                //_Kangaroo.CheckKangaroos();
+
+                //ToyBox _ToyBox = new ToyBox();
+                //_ToyBox.CalculateToyBox();
+
+                //SecureString ss = new SecureString();
+                //var s = ss.ConvertToUnsecureString();
+
+                //Console.WriteLine(s);
+
+                //OperationsOnArray _OperationsOnArray = new OperationsOnArray();
+                //_OperationsOnArray.FindOperationsOnArray();
+
+                //LostNumbers _LostNumbers = new LostNumbers();
+                //_LostNumbers.FindLostNumbers();
+                //MojtabaArrayArpaQueries _MojtabaArrayArpaQueries = new MojtabaArrayArpaQueries();
+                //_MojtabaArrayArpaQueries.DOPermutations();
+
+                //EasyProblem ep = new EasyProblem();
+                //ep.Fibonacci();
+
+                //MarchCircuits mc = new MarchCircuits();
+                //mc.DoesItDivide();
+
+                //AprilEasy ae = new AprilEasy();
+                //ae.OneStringNoTrouble();
+
+                //AprilCircuits ac = new AprilCircuits();
+                //ac.GridPhrase();
+
+                //CodeGladiators cg = new CodeGladiators();
+                //cg.NeighboursNewYearParty();
+
+                //PalindromicString ps = new PalindromicString();
+                //ps.PalindromeEverywhere();
+
+                //MayEasy me = new MayEasy();
+                //me.GoodNumbers();
+                //IClass1 i = new Class1();
+                //i.fun();
 
                 Console.WriteLine("Want to Retry? Press 1");
                 int.TryParse(Convert.ToString(Console.ReadLine()), out retry);
+            }
+        }
+    }
+    public static class SecureStringExtension
+    {
+        /// <summary>
+        /// The convert to unsecure string.
+        /// </summary>
+        /// <param name="secureSensitiveData">
+        /// The secure sensitive data.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">
+        /// Thrown when we feel like it.
+        /// </exception>
+        public static string ConvertToUnsecureString(this SecureString secureSensitiveData)
+        {
+            if (secureSensitiveData == null)
+                throw new ArgumentNullException("secureSensitiveData");
+
+            var unmanagedString = IntPtr.Zero;
+            try
+            {
+                unmanagedString = Marshal.SecureStringToGlobalAllocUnicode(secureSensitiveData);
+                return Marshal.PtrToStringUni(unmanagedString);
+            }
+            finally
+            {
+                Marshal.ZeroFreeGlobalAllocUnicode(unmanagedString);
             }
         }
     }

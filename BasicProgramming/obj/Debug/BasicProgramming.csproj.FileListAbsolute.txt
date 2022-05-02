@@ -5,3 +5,10 @@ C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\Basi
 C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.exe
 C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.pdb
 C:\Hitesh\Learnings\HackerEarth\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csprojAssemblyReference.cache
+C:\Code\Github\Programming\BasicProgramming\bin\Debug\BasicProgramming.exe.config
+C:\Code\Github\Programming\BasicProgramming\bin\Debug\BasicProgramming.exe
+C:\Code\Github\Programming\BasicProgramming\bin\Debug\BasicProgramming.pdb
+C:\Code\Github\Programming\BasicProgramming\obj\Debug\BasicProgramming.csproj.CoreCompileInputs.cache
+C:\Code\Github\Programming\BasicProgramming\obj\Debug\BasicProgramming.exe
+C:\Code\Github\Programming\BasicProgramming\obj\Debug\BasicProgramming.pdb
+C:\Code\GitHub\Programming\BasicProgramming\obj\Debug\BasicProgramming.csprojAssemblyReference.cache
